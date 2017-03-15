@@ -1,0 +1,233 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem{arai2010camera}
+{Kohei Arai} {and} {Ronny Mardiyanto}. 2010.
+\newblock \showarticletitle{Camera as mouse and keyboard for handicap person
+  with troubleshooting ability, recovery, and complete mouse events}.
+\newblock {\em International Journal of Human Computer Interaction (IJHCI)\/}
+  {1}, 3 (2010), 46.
+\newblock
+
+
+\bibitem{betke2002camera}
+{Margrit Betke}, {James Gips}, {and} {Peter Fleming}. 2002.
+\newblock \showarticletitle{The camera mouse: visual tracking of body features
+  to provide computer access for people with severe disabilities}.
+\newblock {\em IEEE Transactions on neural systems and Rehabilitation
+  Engineering\/} {10}, 1 (2002), 1--10.
+\newblock
+
+
+\bibitem{chen1999new}
+{Yu-Luen Chen}, {Fuk-Tan Tang}, {Walter~H Chang}, {May-Keun Wong}, {Ying-Ying
+  Shih}, {and} {Te-Son Kuo}. 1999.
+\newblock \showarticletitle{The new design of an infrared-controlled
+  human-computer interface for the disabled}.
+\newblock {\em IEEE Transactions on Rehabilitation Engineering\/} {7}, 4
+  (1999), 474--481.
+\newblock
+
+
+\bibitem{cloud2002experiments}
+{RL Cloud}, {Margrit Betke}, {and} {James Gips}. 2002.
+\newblock \showarticletitle{Experiments with a camera-based human-computer
+  interface system}. In {\em Proceedings of the 7th ERCIM Workshop" User
+  Interfaces for All," UI4ALL}. 103--110.
+\newblock
+
+
+\bibitem{eaton2013real}
+{Joel Eaton} {and} {Eduardo Miranda}. 2013.
+\newblock \showarticletitle{Real-time notation using brainwave control}. In
+  {\em Sound and Music Computing Conference}.
+\newblock
+
+
+\bibitem{gips2000camera}
+{James Gips}, {Margrit Betke}, {and} {Peter Fleming}. 2000.
+\newblock \showarticletitle{The Camera Mouse: Preliminary investigation of
+  automated visual tracking for computer access}. In {\em In Proc. Conf. on
+  Rehabilitation Engineering and Assistive Technology Society of North
+  America}. 98--100.
+\newblock
+
+
+\bibitem{gorodnichy2004nouse}
+{Dmitry~O Gorodnichy} {and} {Gerhard Roth}. 2004.
+\newblock \showarticletitle{Nouse 'use your nose as a mouse' perceptual vision
+  technology for hands-free games and interfaces}.
+\newblock {\em Image and Vision Computing\/} {22}, 12 (2004), 931--942.
+\newblock
+
+
+\bibitem{hornof2005eyedraw}
+{Anthony~J Hornof} {and} {Anna Cavender}. 2005.
+\newblock \showarticletitle{EyeDraw: enabling children with severe motor
+  impairments to draw with their eyes}. In {\em Proceedings of the SIGCHI
+  conference on Human factors in computing systems}. ACM, 161--170.
+\newblock
+
+
+\bibitem{jota2015palpebrae}
+{Ricardo Jota} {and} {Daniel Wigdor}. 2015.
+\newblock \showarticletitle{Palpebrae superioris: exploring the design space of
+  eyelid gestures}. In {\em Proceedings of the 41st Graphics Interface
+  Conference}. Canadian Information Processing Society, 273--280.
+\newblock
+
+
+\bibitem{kaufman1993eye}
+{Arie~E Kaufman}, {Amit Bandopadhay}, {and} {Bernard~D Shaviv}. 1993.
+\newblock \showarticletitle{An eye tracking computer user interface}. In {\em
+  Virtual Reality, 1993. Proceedings., IEEE 1993 Symposium on Research
+  Frontiers in}. IEEE, 120--121.
+\newblock
+
+
+\bibitem{keirn1990man}
+{Zachary~A Keirn} {and} {Jorge~I Aunon}. 1990.
+\newblock \showarticletitle{Man-machine communications through brain-wave
+  processing}.
+\newblock {\em IEEE Engineering in Medicine and biology magazine\/} {9}, 1
+  (1990), 55--57.
+\newblock
+
+
+\bibitem{magee2004eyekeys}
+{John~J Magee}, {Matthew~R Scott}, {Benjamin~N Waber}, {and} {Margrit Betke}.
+  2004.
+\newblock \showarticletitle{Eyekeys: A real-time vision interface based on gaze
+  detection from a low-grade video camera}. In {\em Computer Vision and Pattern
+  Recognition Workshop, 2004. CVPRW'04. Conference on}. IEEE, 159--159.
+\newblock
+
+
+\bibitem{manabe2006full}
+{Hiroyuki Manabe} {and} {Masaaki Fukumoto}. 2006.
+\newblock \showarticletitle{Full-time wearable headphone-type gaze detector}.
+  In {\em CHI'06 Extended Abstracts on Human Factors in Computing Systems}.
+  ACM, 1073--1078.
+\newblock
+
+
+\bibitem{matsumoto2000algorithm}
+{Yoshio Matsumoto} {and} {Alexander Zelinsky}. 2000.
+\newblock \showarticletitle{An algorithm for real-time stereo vision
+  implementation of head pose and gaze direction measurement}. In {\em
+  Automatic Face and Gesture Recognition, 2000. Proceedings. Fourth IEEE
+  International Conference on}. IEEE, 499--504.
+\newblock
+
+
+\bibitem{morris2006facial}
+{Tim Morris} {and} {V Chauhan}. 2006.
+\newblock \showarticletitle{Facial feature tracking for cursor control}.
+\newblock {\em Journal of Network and Computer Applications\/} {29}, 1 (2006),
+  62--80.
+\newblock
+
+
+\bibitem{nishikawa2003face}
+{Atsushi Nishikawa}, {Toshinori Hosoi}, {Kengo Koara}, {Daiji Negoro}, {Ayae
+  Hikita}, {Shuichi Asano}, {Haruhiko Kakutani}, {Fumio Miyazaki}, {Mitsugu
+  Sekimoto}, {Masayoshi Yasui}, {and} {others}. 2003.
+\newblock \showarticletitle{FAce MOUSe: A novel human-machine interface for
+  controlling the position of a laparoscope}.
+\newblock {\em IEEE Transactions on Robotics and Automation\/} {19}, 5 (2003),
+  825--841.
+\newblock
+
+
+\bibitem{pantic2000automatic}
+{Maja Pantic} {and} {Leon J.~M. Rothkrantz}. 2000.
+\newblock \showarticletitle{Automatic analysis of facial expressions: The state
+  of the art}.
+\newblock {\em IEEE Transactions on pattern analysis and machine
+  intelligence\/} {22}, 12 (2000), 1424--1445.
+\newblock
+
+
+\bibitem{parmar2012facial}
+{Kaushik Parmar}, {Bhavin Mehta}, {and} {Rupali Sawant}. 2012.
+\newblock \showarticletitle{Facial-feature based Human-Computer Interface for
+  disabled people}. In {\em Communication, Information \& Computing Technology
+  (ICCICT), 2012 International Conference on}. IEEE, 1--5.
+\newblock
+
+
+\bibitem{saragih2011deformable}
+{Jason~M Saragih}, {Simon Lucey}, {and} {Jeffrey~F Cohn}. 2011.
+\newblock \showarticletitle{Deformable model fitting by regularized landmark
+  mean-shift}.
+\newblock {\em International Journal of Computer Vision\/} {91}, 2 (2011),
+  200--215.
+\newblock
+
+
+\bibitem{takami1995computer}
+{Osamu Takami}, {Kazuaki Morimoto}, {Tsumoru Ochiai}, {and} {Takakazu
+  Ishimatsu}. 1995.
+\newblock \showarticletitle{Computer interface to use head and eyeball movement
+  for handicapped people}. In {\em Systems, Man and Cybernetics, 1995.
+  Intelligent Systems for the 21st Century., IEEE International Conference on},
+  Vol.~2. IEEE, 1119--1123.
+\newblock
+
+
+\bibitem{tu2007face}
+{Jilin Tu}, {Hai Tao}, {and} {Thomas Huang}. 2007.
+\newblock \showarticletitle{Face as mouse through visual face tracking}.
+\newblock {\em Computer Vision and Image Understanding\/} {108}, 1 (2007),
+  35--40.
+\newblock
+
+
+\bibitem{varona2008hands}
+{Javier Varona}, {Cristina Manresa-Yee}, {and} {Francisco~J Perales}. 2008.
+\newblock \showarticletitle{Hands-free vision-based interface for computer
+  accessibility}.
+\newblock {\em Journal of Network and Computer Applications\/} {31}, 4 (2008),
+  357--374.
+\newblock
+
+
+\bibitem{ware1987evaluation}
+{Colin Ware} {and} {Harutune~H Mikaelian}. 1987.
+\newblock \showarticletitle{An evaluation of an eye tracker as a device for
+  computer input2}. In {\em ACM SIGCHI Bulletin}, Vol.~17. ACM, 183--188.
+\newblock
+
+
+\end{thebibliography}

@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CS889_YJ.aux
+The style file: SIGCHI-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: CS889_YJ.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in cloud2002experiments
+Warning--empty address in cloud2002experiments
+Warning--empty publisher in eaton2013real
+Warning--empty address in eaton2013real
+Warning--page numbers missing in both pages and numpages fields in eaton2013real
+Warning--empty publisher in gips2000camera
+Warning--empty address in gips2000camera
+Warning--empty publisher in hornof2005eyedraw
+Warning--empty address in hornof2005eyedraw
+Warning--empty publisher in jota2015palpebrae
+Warning--empty address in jota2015palpebrae
+Warning--empty publisher in kaufman1993eye
+Warning--empty address in kaufman1993eye
+Warning--empty publisher in magee2004eyekeys
+Warning--empty address in magee2004eyekeys
+Warning--empty publisher in manabe2006full
+Warning--empty address in manabe2006full
+Warning--empty publisher in matsumoto2000algorithm
+Warning--empty address in matsumoto2000algorithm
+Warning--empty publisher in parmar2012facial
+Warning--empty address in parmar2012facial
+Warning--empty publisher in takami1995computer
+Warning--empty address in takami1995computer
+Warning--can't use both volume and number fields in ware1987evaluation
+Warning--empty publisher in ware1987evaluation
+Warning--empty address in ware1987evaluation
+You've used 23 entries,
+            5283 wiz_defined-function locations,
+            1363 strings with 19031 characters,
+and the built_in function-call counts, 23607 in all, are:
+= -- 3206
+> -- 772
+< -- 2
++ -- 258
+- -- 279
+* -- 1479
+:= -- 2395
+add.period$ -- 114
+call.type$ -- 23
+change.case$ -- 162
+chr.to.int$ -- 23
+cite$ -- 49
+duplicate$ -- 2084
+empty$ -- 1456
+format.name$ -- 348
+if$ -- 6008
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 104
+newline$ -- 183
+num.names$ -- 138
+pop$ -- 856
+preamble$ -- 1
+purify$ -- 254
+quote$ -- 0
+skip$ -- 565
+stack$ -- 0
+substring$ -- 1894
+swap$ -- 222
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 207
+warning$ -- 26
+while$ -- 166
+width$ -- 0
+write$ -- 330
+(There were 26 warnings)
