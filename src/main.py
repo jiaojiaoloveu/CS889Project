@@ -13,6 +13,83 @@ mouth_detector = cv2.CascadeClassifier('data/mouth.xml')
 
 nose＿detector = cv2.CascadeClassifier('data/nose.xml')
 
+def faceDetector(image):
+
+    face = {}
+
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    front_face = front_face_detector.detectMultiScale(gray, 1.3, 5)
+
+    if len(front_face) == 1:
+
+        (x, y, w, h) = front_face[0]
+
+        face['face'] = (x, y, w, h)
+        
+        roi_color = image[y : y + h, x : x + w]
+
+        roi_gray = gray[y : y + h, x : x + w]
+    
+        aleye = al_eye_detector.detectMultiScale(roi_gray)
+
+        if len(aleye) == 1:
+
+            (xx, yy, ww, hh) = aleye[0]
+
+            face['aleye'] = (xx + x, yy + y, ww, hh)
+
+            roi_eye_color = roi_color[yy : yy + hh, xx : xx + ww]
+
+            roi_eye_gray = roi_gray[yy : yy + hh, xx : xx + ww]
+
+            eyes = eye_detector.detectMultiScale(roi_eye_gray)
+
+            if len(eyes) == 2:
+            
+                face['leye'] = eyes[0] + (xx, yy, 0, 0) + (x, y, 0, 0)
+
+                face['reye'] = eyes[1] + (xx, yy, 0, 0) + (x, y, 0, 0)
+
+                if face['leye'][0] > face['reye'][0]:
+                    
+                    tmpeye = face['leye']
+                    
+                    face['leye'] = face['reye']
+                    
+                    face['reye'] = tmpeye
+            
+            elif len(eyes) == 1:
+                
+                (ex, ey, ew, eh) = eyes[0]
+            
+                if ex > ww / 2:
+                    
+                    face['reye'] = (ex + xx + x, ey + yy + y, ew, eh)
+
+                else:
+
+                    face['leye'] = (ex + xx + x, ey + yy + y, ew, eh)
+
+                    
+        mouth = mouth_detector.detectMultiScale(roi_gray, 1.8, 20, 0, (30, 30), (500, 500))
+        
+        if len(mouth) == 1:
+       
+            (xx, yy, ww, hh) = mouth[0]
+        
+            face['mouth'] = (x + xx, y + yy, ww, hh)
+        
+        nose = nose_detector.detectMultiScale(roi_gray, 1.3, 8)
+
+        if len(nose) == 1:
+        
+           (xx, yy, ww, hh) = nose[0]
+    
+           face['nose'] = (x + xx, y + yy, ww, hh)
+
+    return face 
+
 while(True):
 
     ret, frame = camera.read()
@@ -21,52 +98,28 @@ while(True):
 
     image = cv2.flip(image, 1)
     
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    
-    front_face = front_face_detector.detectMultiScale(gray, 1.3, 5)
+    face = faceDetector(image)
+       
+    color = {'face': (255,  0, 0), 'aleye': (255, 255, 255), 'leye': (0, 255, 255), 'reye': (255, 255, 0), 'nose': (0, 255, 0), 'mouth': (0, 0, 255)}
 
-    for (x, y, w, h) in front_face:
-        
-        image = cv2.rectangle(image, (x, y), (x + w, y + h), (255, 0, 0), 2)        
+    for key in face:
 
-        roi_color = image[y : y + h, x : x + w]
+        (x, y, w, h) = face[key]
 
-        roi_gray = gray[y : y + h, x : x + w]
-    
-        aleye = al_eye_detector.detectMultiScale(roi_gray)
+        image = cv2.rectangle(image, (x, y), (x + w, y + h), color[key], 2)
 
-        for (xx, yy, ww, hh) in aleye:
-
-            roi_eye_color = roi_color[yy : yy + hh, xx : xx + ww]
-            roi_eye_gray = roi_gray[yy : yy + hh, xx : xx + ww]
-
-            eyes = eye_detector.detectMultiScale(roi_eye_gray)
-        
-            if len(eyes) == 2:
-
-                for (ex, ey, ew, eh) in eyes:
-
-                    cv2.rectangle(roi_eye_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
-
-        mouth = mouth_detector.detectMultiScale(roi_gray, 2, 20, 0, (30, 30), (500, 500))
-        
-        for (xx, yy, ww, hh) in mouth:
-            
-            cv2.rectangle(roi_color, (xx, yy), (xx + ww, yy + hh), (0, 0, 255), 2)
-
-        nose = nose_detector.detectMultiScale(roi_gray, 1.5, 10, 0, (20, 20))
-
-        for (xx, yy, ww, hh) in nose:
-
-           cv2.rectangle(roi_color, (xx, yy), (xx + ww, yy + hh), (0, 255, 255), 2)
-    
     cv2.imshow('image', image)
-    
+   
     key = cv2.waitKey(5)
     
     if key & 0xFF == ord('q'):
+
         break
 
+    elif key & 0xFF == ord('p'):
+        print(face)
+ 
+    
 camera.release()
 
 cv2.destroyAllWindows()
