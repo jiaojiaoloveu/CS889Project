@@ -7,6 +7,8 @@ from face_detector import faceDetector
 
 pyautogui.FALSESAFE = False
 
+#test
+
 camera = cv2.VideoCapture(0)
 
 debug = True
