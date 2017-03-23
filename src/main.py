@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 import cv2
 import numpy as np
 
@@ -11,7 +14,7 @@ eye_detector = cv2.CascadeClassifier('data/eye.xml')
 
 mouth_detector = cv2.CascadeClassifier('data/mouth.xml')
 
-nose＿detector = cv2.CascadeClassifier('data/nose.xml')
+nose_detector = cv2.CascadeClassifier('data/nose.xml')
 
 while(True):
 
@@ -36,6 +39,8 @@ while(True):
         aleye = al_eye_detector.detectMultiScale(roi_gray)
 
         for (xx, yy, ww, hh) in aleye:
+
+            cv2.rectangle(roi_color, (xx, yy), (xx + ww, yy + hh), (255, 255, 255), 2)
 
             roi_eye_color = roi_color[yy : yy + hh, xx : xx + ww]
             roi_eye_gray = roi_gray[yy : yy + hh, xx : xx + ww]
