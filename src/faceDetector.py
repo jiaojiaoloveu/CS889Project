@@ -9,21 +9,18 @@ class faceDetector:
         self.mouth_detector = cv2.CascadeClassifier('data/mouth.xml')
         self.nose＿detector = cv2.CascadeClassifier('data/nose.xml')
 
-    def detect(self, image):
-        face = {}
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        cv2.imshow('gray', gray)
+    def detect(self, gray):
+        face = {'face': (), 'aleye': (), 'leye': (), 'reye': (), 'mouth': (), 'nose': ()}
+#        cv2.imshow('gray', gray)
         front_face = self.front_face_detector.detectMultiScale(gray, 1.3, 5)
         if len(front_face) == 1:
             (x, y, w, h) = front_face[0]
             face['face'] = (x, y, w, h)
-            roi_color = image[y : y + h, x : x + w]
             roi_gray = gray[y : y + h, x : x + w]
             aleye = self.al_eye_detector.detectMultiScale(roi_gray)
             if len(aleye) == 1:
                 (xx, yy, ww, hh) = aleye[0]
                 face['aleye'] = (xx + x, yy + y, ww, hh)
-                roi_eye_color = roi_color[yy : yy + hh, xx : xx + ww]
                 roi_eye_gray = roi_gray[yy : yy + hh, xx : xx + ww]
                 eyes = self.eye_detector.detectMultiScale(roi_eye_gray)
                 if len(eyes) == 2:
